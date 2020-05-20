@@ -124,15 +124,15 @@ module "cucumber_testsuite" {
       }
     }
     suse-client = {
-      image = "sles15sp1o"
-      name = "cli-sles15"
+      image = "opensuse151o"
+      name = "cli-opensuse15"
       provider_settings = {
         mac = "AA:B2:93:00:00:01"
       }
     }
     suse-minion = {
-      image = "sles15sp1o"
-      name = "min-sles15"
+      image = "opensuse151o"
+      name = "min-opensuse15"
       provider_settings = {
         mac = "AA:B2:93:00:00:02"
       }
@@ -144,8 +144,8 @@ module "cucumber_testsuite" {
       }
     }
     suse-sshminion = {
-      image = "sles15sp1o"
-      name = "minssh-sles15"
+      image = "opensuse151o"
+      name = "minssh-opensuse15"
       provider_settings = {
         mac = "AA:B2:93:00:00:03"
       }
@@ -168,7 +168,7 @@ module "cucumber_testsuite" {
       }
     }
     pxeboot-minion = {
-      image = "sles15sp2o"
+      image = "opensuse152o"
     }
     kvm-host = {
       image = "opensuse152o"
