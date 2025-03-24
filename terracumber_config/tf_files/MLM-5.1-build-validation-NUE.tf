@@ -183,7 +183,8 @@ module "server_containerized" {
   source             = "./modules/server_containerized"
   base_configuration = module.base_core.configuration
   name               = "server"
-  image              = "slmicro61o"
+  # image              = "slmicro61o"
+  image              = "slemicro55o"
   provider_settings = {
     mac                = "aa:b2:92:42:01:01"
     memory             = 40960
