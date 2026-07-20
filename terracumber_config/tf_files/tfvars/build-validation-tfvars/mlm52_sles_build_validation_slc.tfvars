@@ -8,14 +8,14 @@ ENVIRONMENT_CONFIGURATION = {
   server_containerized = {
     mac   = "aa:b2:92:05:00:01"
     name  = "server"
-    image = "slemicro55o"
+    image = "sle15sp7o"
     string_registry = false
 
   }
   proxy_containerized = {
     mac   = "aa:b2:92:05:00:02"
     name  = "proxy"
-    image = "slemicro55o"
+    image = "sle15sp7o"
     string_registry = false
   }
   monitoring_server = {
@@ -37,10 +37,6 @@ ENVIRONMENT_CONFIGURATION = {
     mac  = "aa:b2:92:05:00:10"
     name = "sles12sp5-minion"
   }
-  sles15sp3_minion = {
-    mac  = "aa:b2:92:05:00:11"
-    name = "sles15sp3-minion"
-  }
   sles15sp4_minion = {
     mac  = "aa:b2:92:05:00:12"
     name = "sles15sp4-minion"
@@ -57,59 +53,94 @@ ENVIRONMENT_CONFIGURATION = {
     mac  = "aa:b2:92:05:00:15"
     name = "sles15sp7-minion"
   }
-  centos7_minion = {
-    mac  = "aa:b2:92:05:00:17"
-    name = "centos7-minion"
-  }
-  # We forgot to automate amazon2
-  rocky8_minion = {
-    mac  = "aa:b2:92:05:00:18"
-    name = "rocky8-minion"
+  sles160_minion = {
+    mac  = "aa:b2:92:05:00:16"
+    name = "sles160-minion"
   }
   alma8_minion = {
     mac  = "aa:b2:92:05:00:19"
     name = "alma8-minion"
   }
-  rocky9_minion = {
-    mac  = "aa:b2:92:05:00:21"
-    name = "rocky9-minion"
-  }
   alma9_minion = {
     mac  = "aa:b2:92:05:00:22"
     name = "alma9-minion"
   }
-  oracle9_minion = {
-    mac  = "aa:b2:92:05:00:23"
-    name = "oracle9-minion"
+  amazon2023_minion = {
+    mac  = "aa:b2:92:05:00:24"
+    name = "amazon2023-minion"
+  }
+  centos7_minion = {
+    mac  = "aa:b2:92:05:00:17"
+    name = "centos7-minion"
   }
   liberty9_minion = {
     mac  = "aa:b2:92:05:00:25"
     name = "liberty9-minion"
   }
+  oracle9_minion = {
+    mac  = "aa:b2:92:05:00:23"
+    name = "oracle9-minion"
+  }
+  rocky8_minion = {
+    mac  = "aa:b2:92:05:00:18"
+    name = "rocky8-minion"
+  }
+  rocky9_minion = {
+    mac  = "aa:b2:92:05:00:21"
+    name = "rocky9-minion"
+  }
+  rocky10_minion = {
+    mac  = "aa:b2:92:05:00:1e"
+    name = "rocky10-minion"
+  }
+  alma10_minion = {
+    mac  = "aa:b2:92:05:00:1a"
+    name = "alma10-minion"
+  }
+  oracle10_minion = {
+    mac  = "aa:b2:92:05:00:1f"
+    name = "oracle10-minion"
+  }
+  liberty10_minion = {
+    mac  = "aa:b2:92:05:00:26"
+    name = "liberty10-minion"
+  }
+  openeuler2403_minion = {
+    mac  = "aa:b2:92:05:00:20"
+    name = "openeuler2403-minion"
+  }
+  debian13_minion = {
+    mac  = "aa:b2:92:05:00:11"
+    name = "debian13-minion"
+  }
+  raspios13_minion = {
+    mac  = "aa:b2:92:05:00:27"
+    name = "raspios13-minion"
+  }
   ubuntu2204_minion = {
     mac  = "aa:b2:92:05:00:1b"
     name = "ubuntu2204-minion"
-  }
-  debian12_minion = {
-    mac  = "aa:b2:92:05:00:1c"
-    name = "debian12-minion"
   }
   ubuntu2404_minion = {
     mac  = "aa:b2:92:05:00:1d"
     name = "ubuntu2404-minion"
   }
-  opensuse156arm_minion = {
-    mac  = "aa:b2:92:42:00:0a"
-    name = "opensuse156arm-minion"
+  ubuntu2604_minion = {
+    mac  = "aa:b2:92:05:00:1c"
+    name = "ubuntu2604-minion"
   }
-  salt_migration_minion = {
-    mac  = "aa:b2:92:05:00:2f"
-    name = "salt-migration-minion"
+  opensuse160arm_minion = {
+    mac  = "aa:b2:92:42:00:0a"
+    name = "opensuse160arm-minion-slc"
   }
   sles15sp5s390_minion = {
     mac    = "02:00:00:02:01:32"
     name   = "sles15sp5s390-minion"
-    userid = "S50MISLC"
+    userid = "S52MISLC"
+  }
+  salt_migration_minion = {
+    mac  = "aa:b2:92:05:00:2f"
+    name = "salt-migration-minion"
   }
 
   # Micro Minions
@@ -147,10 +178,6 @@ ENVIRONMENT_CONFIGURATION = {
     mac  = "aa:b2:92:05:00:30"
     name = "sles12sp5-sshminion"
   }
-  sles15sp3_sshminion = {
-    mac  = "aa:b2:92:05:00:31"
-    name = "sles15sp3-sshminion"
-  }
   sles15sp4_sshminion = {
     mac  = "aa:b2:92:05:00:32"
     name = "sles15sp4-sshminion"
@@ -167,64 +194,68 @@ ENVIRONMENT_CONFIGURATION = {
     mac  = "aa:b2:92:05:00:35"
     name = "sles15sp7-sshminion"
   }
-  centos7_sshminion = {
-    mac  = "aa:b2:92:05:00:37"
-    name = "centos7-sshminion"
-  }
-  # We forgot to automate amazon2
-  rocky8_sshminion = {
-    mac  = "aa:b2:92:05:00:38"
-    name = "rocky8-sshminion"
-  }
   alma8_sshminion = {
     mac  = "aa:b2:92:05:00:39"
     name = "alma8-sshminion"
-  }
-  rocky9_sshminion = {
-    mac  = "aa:b2:92:05:00:41"
-    name = "rocky9-sshminion"
   }
   alma9_sshminion = {
     mac  = "aa:b2:92:05:00:42"
     name = "alma9-sshminion"
   }
-  oracle9_sshminion = {
-    mac  = "aa:b2:92:05:00:43"
-    name = "oracle9-sshminion"
+  amazon2023_sshminion = {
+    mac  = "aa:b2:92:05:00:44"
+    name = "amazon2023-sshminion"
+  }
+  centos7_sshminion = {
+    mac  = "aa:b2:92:05:00:37"
+    name = "centos7-sshminion"
   }
   liberty9_sshminion = {
     mac  = "aa:b2:92:05:00:45"
     name = "liberty9-sshminion"
   }
+  oracle9_sshminion = {
+    mac  = "aa:b2:92:05:00:43"
+    name = "oracle9-sshminion"
+  }
+  rocky8_sshminion = {
+    mac  = "aa:b2:92:05:00:38"
+    name = "rocky8-sshminion"
+  }
+  rocky9_sshminion = {
+    mac  = "aa:b2:92:05:00:41"
+    name = "rocky9-sshminion"
+  }
   ubuntu2204_sshminion = {
     mac  = "aa:b2:92:05:00:3b"
     name = "ubuntu2204-sshminion"
-  }
-  debian12_sshminion = {
-    mac  = "aa:b2:92:05:00:3c"
-    name = "debian12-sshminion"
   }
   ubuntu2404_sshminion = {
     mac  = "aa:b2:92:05:00:3d"
     name = "ubuntu2404-sshminion"
   }
-  opensuse156arm_sshminion = {
+  ubuntu2604_sshminion = {
+    mac  = "aa:b2:92:05:00:3c"
+    name = "ubuntu2604-sshminion"
+  }
+  opensuse160arm_sshminion = {
     mac  = "aa:b2:92:42:00:0b"
-    name = "opensuse156arm-sshminion"
+    name = "opensuse160arm-sshminion-slc"
   }
   sles15sp5s390_sshminion = {
     mac    = "02:00:00:02:01:33"
     name   = "sles15sp5s390-sshminion"
-    userid = "S50SSSLC"
+    userid = "S52SSSLC"
   }
-  product_version = "5.0-released"
-  name_prefix     = "suma-bv-50-micro-"
-  url_prefix      = "https://ci.suse.de/view/Manager/view/Manager-qe/job/manager-5.0-micro-qe-build-validation-BACKUP"
+
+  product_version = "5.2-released"
+  name_prefix     = "suma-bv-52-sles-"
+  url_prefix      = "https://ci.suse.de/view/Manager/view/Manager-qe/job/manager-5.2-sles-qe-build-validation-BACKUP"
 }
 
 BASE_CONFIGURATION = {
   base_core = {
-    images             = [ "sles15sp5o", "sles15sp7o", "opensuse156o", "slemicro55o" ]
+    images             = [ "sles15sp5o", "sles15sp7o", "opensuse156o" ]
     pool               = "ssd"
     bridge             = "br1"
     additional_network = null
@@ -238,40 +269,41 @@ BASE_CONFIGURATION = {
     hypervisor         = "tatooine.mgr.slc1.suse.org"
   }
   base_rhlike = {
-    images             = [ "almalinux8o", "almalinux9o", "centos7o", "oraclelinux9o", "rocky8o", "rocky9o", "libertylinux9o" ]
+    images             = [ "almalinux8o", "almalinux9o", "almalinux10o", "amazonlinux2023o", "centos7o", "libertylinux9o", "libertylinux10o", "openeuler2403o", "oraclelinux9o", "oraclelinux10o", "rocky8o", "rocky9o", "rocky10o" ]
     pool               = "ssd"
     bridge             = "br1"
     additional_network = null
     hypervisor         = "tatooine.mgr.slc1.suse.org" # Share base_old_sle hypervisor
   }
   base_new_sle = {
-    images             = [ "sles15sp3o", "sles15sp4o", "sles15sp5o", "sles15sp6o", "sles15sp7o", "slemicro52-ign", "slemicro53-ign", "slemicro54-ign", "slemicro55o", "slmicro60o", "slmicro61o", "slmicro62o" ]
+    images             = [ "sles15sp4o", "sles15sp5o", "sles15sp6o", "sles15sp7o", "sles160o", "slemicro52-ign", "slemicro53-ign", "slemicro54-ign", "slemicro55o", "slmicro60o", "slmicro61o", "slmicro62o" ]
     pool               = "ssd"
     bridge             = "br1"
     additional_network = null
     hypervisor         = "florina.mgr.slc1.suse.org"
   }
   base_retail = {
-    images             = ["sles15sp6o","sles15sp7o", "opensuse156o", "slemicro55o"]
+    images             = [ "sles15sp6o","sles15sp7o", "opensuse156o" ]
     pool               = "ssd"
     bridge             = "br1"
-    additional_network = "192.168.50.0/24"
+    additional_network = "192.168.52.0/24"
     hypervisor         = "terminus.mgr.slc1.suse.org"
   }
   base_deblike = {
-    images             = ["ubuntu2204o", "ubuntu2404o", "debian12o"]
+    images             = [ "ubuntu2204o", "ubuntu2404o", "ubuntu2604", "debian13o", "raspios13o" ]
     pool               = "ssd"
     bridge             = "br1"
     additional_network = null
     hypervisor         = "trantor.mgr.slc1.suse.org"
   }
   base_arm = {
+    images             = [ "opensuse160armo" ]
     pool               = "ssd"
     bridge             = "br0"
     additional_network = null
     hypervisor         = "suma-arm.mgr.suse.de"
   }
 }
-MAIL_SUBJECT          = "Results 5.0 Build Validation $status: $tests scenarios ($failures failed, $errors errors, $skipped skipped, $passed passed)"
-MAIL_SUBJECT_ENV_FAIL = "Results HEAD Build Validation: Environment setup failed"
+MAIL_SUBJECT          = "Results 5.2 Build Validation $status: $tests scenarios ($failures failed, $errors errors, $skipped skipped, $passed passed)"
+MAIL_SUBJECT_ENV_FAIL = "Results 5.2 Build Validation: Environment setup failed"
 LOCATION              = "slc1"

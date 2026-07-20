@@ -111,7 +111,7 @@ module "base_rhlike" {
   }
 }
 
-# Base New SLE : SLES 15 + Micro
+# Base New SLE : SLES 15 + SLES 16 + SL(E) Micro
 module "base_new_sle" {
   providers = { libvirt = libvirt.host_new_sle }
   source    = "./modules/base"

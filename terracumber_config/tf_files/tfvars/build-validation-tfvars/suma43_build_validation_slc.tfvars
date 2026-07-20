@@ -19,8 +19,6 @@ ENVIRONMENT_CONFIGURATION = {
     name = "monitoring"
     image = "sles15sp4o"
   }
-
-  # Build Hosts
   sles15sp6_buildhost = {
     mac  = "aa:b2:92:05:00:a6"
     name = "sles15sp6-build"
@@ -30,7 +28,7 @@ ENVIRONMENT_CONFIGURATION = {
     name = "sles15sp7-build"
   }
 
-  # Clients
+  # Traditional Clients
   sles12sp5_client = {
     mac  = "aa:b2:92:05:00:a8"
     name = "sles12sp5-client"
