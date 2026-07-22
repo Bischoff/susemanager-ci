@@ -62,7 +62,6 @@ v51_nodes_dynamic_client_tools_repos: Dict[str, Set[str]] = {
     "rocky10_minion": { "/SUSE_Updates_MultiLinuxManagerTools_EL-10_x86_64/"},
     "salt_migration_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-15_x86_64/" },
     "sles12sp5_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-12_x86_64/" },
-    "sles15sp3_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-15_x86_64/" },
     "sles15sp4_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-15_x86_64/" },
     "sles15sp5_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-15_x86_64/", },
     "sles15sp5s390_minion": { "/SUSE_Updates_MultiLinuxManagerTools_SLE-15_s390x/" },

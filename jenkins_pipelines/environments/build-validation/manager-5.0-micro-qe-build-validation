@@ -16,7 +16,6 @@ node('sumaform-cucumber') {
             activeChoice(name: 'minions_to_run', description: 'Node list to run during BV', choiceType: 'PT_CHECKBOX', script: [$class: 'GroovyScript', script: [$class: 'SecureGroovyScript', sandbox: true, script: """
                 return [
                     'sles12sp5_minion:selected', 'sles12sp5_sshminion:selected',
-                    'sles15sp3_minion:selected', 'sles15sp3_sshminion:selected',
                     'sles15sp4_minion:selected', 'sles15sp4_sshminion:selected',
                     'sles15sp5_minion:selected', 'sles15sp5_sshminion:selected',
                     'sles15sp6_minion:selected', 'sles15sp6_sshminion:selected',
